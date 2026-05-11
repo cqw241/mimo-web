@@ -36,8 +36,11 @@ export default function ContactPage() {
               <h3 className="text-title-sm text-ink font-medium mb-1">
                 Email
               </h3>
-              <p className="text-body-sm text-body break-all">
+              <p className="text-body-sm text-body break-all mb-1">
                 exue489@gmail.com
+              </p>
+              <p className="text-body-sm text-body break-all">
+                2191917096@qq.com
               </p>
             </a>
           </FadeIn>

@@ -72,10 +72,10 @@ export default function GeotaskshieldCaseStudy() {
         <FadeIn>
           <div className="max-w-3xl">
             <p className="text-body-md text-body leading-relaxed mb-4">
-              移动群智感知（Mobile Crowdsensing）通过大量移动设备用户协作完成感知任务，但参与者的位置隐私面临严重威胁。任务分配过程中，平台需要知道参与者的位置以优化分配效率，但这直接暴露了用户的行踪轨迹。
+              GeoTaskShield不只是一个任务分配仿真工具，而是面向隐私计算与移动群智感知领域的一体化研究与决策验证平台。我们的核心理念是：让研究者和城市治理者在“数据效用”与“隐私保护”之间找到可量化、可解释、可验证的最优均衡。
             </p>
             <p className="text-body-md text-body leading-relaxed">
-              GeoTaskShield 的核心问题是：如何在保护参与者位置隐私的同时，维持合理的任务完成率和系统收益？不同的隐私机制与分配算法对效率与隐私的权衡影响如何？
+              平台将广州大学城这类城市空间的真实矛盾——用位置数据提升服务效率与保护个人轨迹隐私之间的冲突——转化为一套完整的“设计→运行→攻击检验→报告→分享”研究闭环。
             </p>
           </div>
         </FadeIn>
@@ -87,18 +87,18 @@ export default function GeotaskshieldCaseStudy() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
             <div className="bg-surface-dark-elevated rounded-lg p-6">
               <h3 className="text-title-sm text-on-dark font-medium mb-2">
-                隐私计算研究者
+                学术研究与教学
               </h3>
               <p className="text-body-sm text-on-dark-soft leading-relaxed">
-                需要可复现的实验平台来对比不同隐私机制的效果与代价。
+                研究不同隐私机制效果，进行沙盒推演与论文数据生成。
               </p>
             </div>
             <div className="bg-surface-dark-elevated rounded-lg p-6">
               <h3 className="text-title-sm text-on-dark font-medium mb-2">
-                群智感知平台设计者
+                群智感知平台、城市治理决策者
               </h3>
               <p className="text-body-sm text-on-dark-soft leading-relaxed">
-                需要在系统设计阶段评估隐私保护策略对业务指标的影响。
+                评估隐私政策对数据效用的影响与权衡。
               </p>
             </div>
           </div>
@@ -116,28 +116,28 @@ export default function GeotaskshieldCaseStudy() {
               {[
                 {
                   step: "01",
-                  title: "场景建模",
-                  desc: "定义感知任务、参与者、地理位置与移动模型，构建可配置的仿真场景。",
+                  title: "深度仿真引擎",
+                  desc: "支持多轮时序仿真与累积隐私风险建模，利用真实路网进行空间计算，实现数字孪生环境。",
                 },
                 {
                   step: "02",
-                  title: "隐私机制实现",
-                  desc: "实现多种位置隐私保护机制（如差分隐私、位置扰动、地理混淆等）。",
+                  title: "智能研究 Agent",
+                  desc: "作为主动研究伙伴分析实验结果，推荐参数优化、提供归因解释，并支持多维反事实推理。",
                 },
                 {
                   step: "03",
-                  title: "任务分配算法",
-                  desc: "实现多种分配策略，在隐私约束下优化任务完成率与系统收益。",
+                  title: "多维可解释性",
+                  desc: "打开决策黑箱，图形化解释单次分配权重与特征重要性，生成包含全场景的交互 HTML 报告。",
                 },
                 {
                   step: "04",
-                  title: "多指标量化评估",
-                  desc: "量化任务完成率、系统收益、公平性与隐私损失等核心指标。",
+                  title: "红蓝对抗验证",
+                  desc: "内置典型的攻击模型库进行实测对抗对比，让隐私保障不再停留于理论公式。",
                 },
                 {
                   step: "05",
-                  title: "可视化与报告",
-                  desc: "提供实时仿真可视化、批量实验分析与 Markdown/CSV 报告导出。",
+                  title: "开放算法生态",
+                  desc: "标准化算法接口与基准市场，能够一键复现学术算法或添加插件化的自定义规则。",
                 },
               ].map((item) => (
                 <div

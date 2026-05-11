@@ -72,10 +72,10 @@ export default function RuichaCaseStudy() {
         <FadeIn>
           <div className="max-w-3xl">
             <p className="text-body-md text-body leading-relaxed mb-4">
-              高校心理健康支持面临人力不足、识别滞后、转介流程不规范等系统性挑战。传统的心理风险识别高度依赖人工筛查，覆盖范围有限，且难以在早期捕捉细微的行为与情绪变化信号。
+              睿察·心链聚焦一个核心悖论：学生心理求助意愿低、早期信号不典型，而学校心理中心资源有限，难以在庞大学生群体中快速发现风险并启动规范转介。
             </p>
             <p className="text-body-md text-body leading-relaxed">
-              睿察 · 心链 的出发点是：能否通过多模态 AI 技术，构建一个智能辅助识别系统，在不替代专业判断的前提下，帮助心理支持工作者更早、更全面地发现潜在风险信号？
+              睿察·心链通过多智能体协同与多模态分析技术，在保护隐私、不替代专业判断的前提下，架起一座从“风险初现”到“专业介入”的桥梁。
             </p>
           </div>
         </FadeIn>
@@ -87,26 +87,26 @@ export default function RuichaCaseStudy() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl">
             <div className="bg-surface-dark-elevated rounded-lg p-6">
               <h3 className="text-title-sm text-on-dark font-medium mb-2">
-                高校心理中心
+                学校心理中心
               </h3>
               <p className="text-body-sm text-on-dark-soft leading-relaxed">
-                作为日常筛查的辅助工具，扩展识别覆盖面，降低遗漏风险。
+                接受系统的转介汇总信息和智能预警，精准分配专业干预资源到真正需要的学生。
               </p>
             </div>
             <div className="bg-surface-dark-elevated rounded-lg p-6">
               <h3 className="text-title-sm text-on-dark font-medium mb-2">
-                辅导员与班主任
+                学生群体
               </h3>
               <p className="text-body-sm text-on-dark-soft leading-relaxed">
-                获取结构化的风险提示与脱敏报告，辅助人工判断与跟进。
+                通过日常标准聊天或视频通话双通道模式降低求助门槛，进行风险筛查和日常倾诉。
               </p>
             </div>
             <div className="bg-surface-dark-elevated rounded-lg p-6">
               <h3 className="text-title-sm text-on-dark font-medium mb-2">
-                科研团队
+                心理健康专员/辅导员
               </h3>
               <p className="text-body-sm text-on-dark-soft leading-relaxed">
-                用于多模态心理信号融合分析的实验平台与数据支撑。
+                按照既定转介流程接收自动触发的信息推送，辅助完成评估与跟进干预闭环。
               </p>
             </div>
           </div>
@@ -118,34 +118,34 @@ export default function RuichaCaseStudy() {
         <FadeIn>
           <div className="max-w-3xl">
             <p className="text-body-md text-body leading-relaxed mb-6">
-              系统采用多智能体协作架构，将心理风险识别拆分为多个独立但协同的分析任务：
+              系统采用多智能体（Multi-Agent）并行架构协作，将风险识别拆分：
             </p>
             <div className="space-y-4">
               {[
                 {
                   step: "01",
-                  title: "多模态信号采集",
-                  desc: "融合文本对话、语音特征与面部表情线索，构建多维度的行为信号输入。",
+                  title: "多模态风险感知",
+                  desc: "同步采集并分析文本内容、语音特征（语速、音调）及面部表情变化，捕捉综合风险信号。",
                 },
                 {
                   step: "02",
-                  title: "LangGraph Agent 编排",
-                  desc: "通过 LangGraph 构建有向无环图，定义分析 Agent 的执行顺序、条件分支与状态传递。",
+                  title: "双通道交互",
+                  desc: "提供日常评估标准聊天，以及针对深度辅助评估获取知情同意后的视频通话模式。",
                 },
                 {
                   step: "03",
-                  title: "风险分级策略",
-                  desc: "基于多维信号的综合评估，输出分级风险提示（低 / 中 / 高），附带可解释的判断依据。",
+                  title: "并行分析汇聚",
+                  desc: "文本、视觉、语音等专用智能体同时进行分析工作，并在网关智能体处汇聚（Fan-in）低延迟判断。",
                 },
                 {
                   step: "04",
-                  title: "脱敏告警与人工复核",
-                  desc: "风险信号经脱敏处理后推送给相关人员，所有结果需经人工复核确认，系统不替代专业判断。",
+                  title: "条件智能路由",
+                  desc: "根据多维分析结果动态决定信息流向（Fan-out），只推送高风险案例避免轰炸。",
                 },
                 {
                   step: "05",
-                  title: "规范转介闭环",
-                  desc: "高风险案例自动关联转介流程，确保从识别到干预的完整闭环。",
+                  title: "规范流转闭环",
+                  desc: "按照学校既定的转介流程送达专业人手，不代替诊断决策而是建立识别至介入的桥梁。",
                 },
               ].map((item) => (
                 <div
