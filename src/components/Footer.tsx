@@ -64,6 +64,13 @@ export function Footer() {
                   exue489@gmail.com
                 </a>
                 <a
+                  href="mailto:2191917096@qq.com"
+                  className="text-body-sm hover:text-on-dark transition-colors inline-flex items-center gap-2"
+                >
+                  <Mail size={14} />
+                  2191917096@qq.com
+                </a>
+                <a
                   href="https://github.com/cqw241"
                   target="_blank"
                   rel="noopener noreferrer"

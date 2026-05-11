@@ -25,10 +25,10 @@ export default function ContactPage() {
         </FadeIn>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl">
-          <FadeIn delay={0}>
+          <FadeIn delay={0} className="h-full">
             <a
               href="mailto:exue489@gmail.com"
-              className="group block bg-surface-card rounded-lg p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_2px_12px_rgba(20,20,19,0.06)]"
+              className="group block h-full bg-surface-card rounded-lg p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_2px_12px_rgba(20,20,19,0.06)]"
             >
               <div className="w-10 h-10 rounded-md bg-hairline-soft flex items-center justify-center text-primary mb-5">
                 <Mail size={20} />
@@ -45,12 +45,12 @@ export default function ContactPage() {
             </a>
           </FadeIn>
 
-          <FadeIn delay={0.1}>
+          <FadeIn delay={0.1} className="h-full">
             <a
               href="https://github.com/cqw241"
               target="_blank"
               rel="noopener noreferrer"
-              className="group block bg-surface-card rounded-lg p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_2px_12px_rgba(20,20,19,0.06)]"
+              className="group block h-full bg-surface-card rounded-lg p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_2px_12px_rgba(20,20,19,0.06)]"
             >
               <div className="w-10 h-10 rounded-md bg-hairline-soft flex items-center justify-center text-primary mb-5">
                 <GithubIcon size={20} />
@@ -64,12 +64,12 @@ export default function ContactPage() {
             </a>
           </FadeIn>
 
-          <FadeIn delay={0.2}>
+          <FadeIn delay={0.2} className="h-full">
             <a
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="group block bg-surface-card rounded-lg p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_2px_12px_rgba(20,20,19,0.06)]"
+              className="group block h-full bg-surface-card rounded-lg p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_2px_12px_rgba(20,20,19,0.06)]"
             >
               <div className="w-10 h-10 rounded-md bg-hairline-soft flex items-center justify-center text-primary mb-5">
                 <FileText size={20} />
